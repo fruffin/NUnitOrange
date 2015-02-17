@@ -1,0 +1,4 @@
+C:\Users\Sai Baba\documents\visual studio 2010\Projects\NUnitOrange\NUnitOrange\bin\Release\NUnitOrange.exe
+C:\Users\Sai Baba\documents\visual studio 2010\Projects\NUnitOrange\NUnitOrange\bin\Release\NUnitOrange.pdb
+C:\Users\Sai Baba\documents\visual studio 2010\Projects\NUnitOrange\NUnitOrange\obj\x86\Release\NUnitOrange.exe
+C:\Users\Sai Baba\documents\visual studio 2010\Projects\NUnitOrange\NUnitOrange\obj\x86\Release\NUnitOrange.pdb
