@@ -28,7 +28,7 @@ namespace NUnitOrange
             }
             else
             {
-                Console.Write("Usage: ExtentNUnit \"NUnitResult.xml\" \"ExtentNUnit.html\"");
+                Console.Write("Usage: NUnitOrange \"NUnitResult.xml\" \"Orange.html\"");
             }
         }
     }
