@@ -1,6 +1,6 @@
 ## NUnit Orange – NUnit HTML Report Generator
 
-NUnit Orange is a masonry style HTML reporting library for creating NUnit reports. Its a simple Console application that creates easy to use, attractive reports. It shows the XML output from NUnit in a presentable manner with charts, graphs and tables. 
+NUnit Orange is a masonry style HTML reporting library for creating NUnit reports. Its a simple Console application that creates easy to use, attractive reports. It shows the XML output from NUnit in a presentable manner with charts, graphs and tables. View <a href='/Tools/NUnitOrange/NUnitOrange.html'>sample</a>.</p>
 
 ### Download
 
