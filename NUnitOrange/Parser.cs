@@ -86,10 +86,10 @@
         {
             if (list.Contains("Failed")) return "failed";
             if (list.Contains("Inconclusive")) return "inconclusive";
-            if (list.Contains("Passed"))
-                return "passed";
+            if (list.Contains("Passed")) return "passed";
+            if (list.Contains("Skipped")) return "skipped";
             else
-                return "skipped";
+                return "unknown";
         }
 
         // icons from font-awesome
