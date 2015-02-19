@@ -9,7 +9,7 @@
                 return @"<!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en'> 
 <!--
-	Extent4NUnit Library v1.0 | http://relevantcodes.com/extent-nunit-html-reports/ | https://github.com/relevantcodes/
+	NUnit Orange Library v1.0 | http://relevantcodes.com/nunit-orange-nunit-html-report-generator/ | https://github.com/relevantcodes/
 --> 
 	<head>
 		<title>NUnit Orange</title>
