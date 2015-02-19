@@ -1,12 +1,4 @@
-﻿namespace NUnitOrange
-{
-    internal class Markup
-    {
-        public static string Base
-        {
-            get
-            {
-                return @"<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml' xml:lang='en'> 
 <!--
 	NUnit Orange Library v1.0 | http://relevantcodes.com/nunit-orange-nunit-html-report-generator/ | https://github.com/relevantcodes/
@@ -354,22 +346,22 @@
 						<table class='simple-grey'>
 							<thead>
 								<tr><th>Param</th><th>Value</th></tr>
-								<tr><td>Random Seed</td><td><!--%RANDOMSEED%--></td></tr>
-								<tr><td>Duration</td><td><!--%DURATION%--></td></tr>
-								<tr><td>Start Time</td><td><!--%STARTTIME%--></td></tr>
-								<tr><td>End Time</td><td><!--%ENDTIME%--></td></tr>
-								<tr><td>Result</td><td><!--%RESULT%--></td></tr>
-								<tr><td>Full Name</td><td><!--%FULLNAME%--></td></tr>
-								<tr><td>Name</td><td><!--%NAME%--></td></tr>
-								<tr><td>ID</td><td><!--%ID%--></td></tr>
-								<tr><td>Culture</td><td><!--%CULTURE%--></td></tr>	
-								<tr><td>User Domtain</td><td><!--%USERDOMAIN%--></td></tr>
-								<tr><td>User</td><td><!--%USER%--></td></tr>
-								<tr><td>Machine Name</td><td><!--%MACHINENAME%--></td></tr>
-								<tr><td>Platform</td><td><!--%PLATFORM%--></td></tr>
-								<tr><td>Os Version</td><td><!--%OSVERSION%--></td></tr>
-								<tr><td>CLR Version</td><td><!--%CLRVERSION%--></td></tr>
-								<tr><td>NUnit Version</td><td><!--%NUNITVERSION%--></td></tr>
+								<tr><td>Random Seed</td><td>605796550</td></tr>
+								<tr><td>Duration</td><td>0.064000</td></tr>
+								<tr><td>Start Time</td><td>2015-02-13 23:03:34Z</td></tr>
+								<tr><td>End Time</td><td>2015-02-13 23:03:34Z</td></tr>
+								<tr><td>Result</td><td>Failed</td></tr>
+								<tr><td>Full Name</td><td>C:/Users/NUnitOrange/Downloads/NUnit-3.0.0-alpha-5b/bin/net-4.0/mock-nunit-assembly.exe</td></tr>
+								<tr><td>Name</td><td>mock-nunit-assembly.exe</td></tr>
+								<tr><td>ID</td><td>2</td></tr>
+								<tr><td>Culture</td><td>en-US</td></tr>	
+								<tr><td>User Domtain</td><td>NUnitOrange</td></tr>
+								<tr><td>User</td><td>NUnitOrange</td></tr>
+								<tr><td>Machine Name</td><td>NUnitOrange</td></tr>
+								<tr><td>Platform</td><td>Win32NT</td></tr>
+								<tr><td>Os Version</td><td>Microsoft Windows NT 6.2.9200.0</td></tr>
+								<tr><td>CLR Version</td><td>4.0.30319.34014</td></tr>
+								<tr><td>NUnit Version</td><td>3.0.5509.17457</td></tr>
 							</thead>
 						</table>
 					</div>
@@ -384,7 +376,315 @@
 				</div>
 				<div id='content-fixture'>
 					<div id='fixture-collection'>
-				        <!--%INSERTFIXTURE%-->
+				        <div class='fixture-container'>
+					<div class='fixture-head'>
+						<span class='fixture-name'>MockTestFixture</span>
+						<span class='fixture-result failed'><i class='fa fa-times'></i></span>
+					</div>
+					<div class='fixture-content'>
+						<table class='simple-grey'>
+							<tr>
+								<th>TestName</th>
+								<th>Status</th>
+							</tr>
+							<tr>
+								<td>FailingTest</td>
+								<td class='failed'>failed<pre>Intentional failure -> at NUnit.Tests.Assemblies.MockTestFixture.FailingTest()</pre></td>
+							</tr>
+                            <tr>
+								<td>InconclusiveTest</td>
+								<td class='inconclusive'>inconclusive</td>
+							</tr>
+                            <tr>
+								<td>MockTest1</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            <tr>
+								<td>MockTest2</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            <tr>
+								<td>MockTest3</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            <tr>
+								<td>MockTest4</td>
+								<td class='skipped'>skipped<pre>ignoring this test method for now</pre></td>
+							</tr>
+                            <tr>
+								<td>MockTest5</td>
+								<td class='failed'>failed<pre>Method is not public</pre></td>
+							</tr>
+                            <tr>
+								<td>NotRunnableTest</td>
+								<td class='failed'>failed<pre>No arguments were provided</pre></td>
+							</tr>
+                            <tr>
+								<td>TestWithException</td>
+								<td class='failed'>failed<pre>System.Exception : Intentional Exception ->    at NUnit.Tests.Assemblies.MockTestFixture.MethodThrowsException()</pre></td>
+							</tr>
+                            <tr>
+								<td>TestWithManyProperties</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            
+						</table>
+					</div>
+				</div>
+                <div class='fixture-container'>
+					<div class='fixture-head'>
+						<span class='fixture-name'>BadFixture</span>
+						<span class='fixture-result failed'><i class='fa fa-times'></i></span>
+					</div>
+					<div class='fixture-content'>
+						<table class='simple-grey'>
+							<tr>
+								<th>TestName</th>
+								<th>Status</th>
+							</tr>
+							<tr>
+								<td>SomeTest</td>
+								<td class='failed'>failed<pre>OneTimeSetUp: No suitable constructor was found</pre></td>
+							</tr>
+                            
+						</table>
+					</div>
+				</div>
+                <div class='fixture-container'>
+					<div class='fixture-head'>
+						<span class='fixture-name'>CDataTestFixure</span>
+						<span class='fixture-result failed'><i class='fa fa-times'></i></span>
+					</div>
+					<div class='fixture-content'>
+						<table class='simple-grey'>
+							<tr>
+								<th>TestName</th>
+								<th>Status</th>
+							</tr>
+							<tr>
+								<td>DemonstrateIllegalSequenceAtEndOfFailureMessage</td>
+								<td class='failed'>failed<pre>The CDATA was: <![CDATA[ My <xml> ]]> -> at NUnit.Tests.CDataTestFixure.DemonstrateIllegalSequenceAtEndOfFailureMessage()</pre></td>
+							</tr>
+                            <tr>
+								<td>DemonstrateIllegalSequenceAtEndOfSuccessMessage</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            <tr>
+								<td>DemonstrateIllegalSequenceInFailureMessage</td>
+								<td class='failed'>failed<pre>Deliberate failure to illustrate ]]> in message  -> at NUnit.Tests.CDataTestFixure.DemonstrateIllegalSequenceInFailureMessage()</pre></td>
+							</tr>
+                            <tr>
+								<td>DemonstrateIllegalSequenceInSuccessMessage</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            
+						</table>
+					</div>
+				</div>
+                <div class='fixture-container'>
+					<div class='fixture-head'>
+						<span class='fixture-name'>GenericMethod</span>
+						<span class='fixture-result passed'><i class='fa fa-check'></i></span>
+					</div>
+					<div class='fixture-content'>
+						<table class='simple-grey'>
+							<tr>
+								<th>TestName</th>
+								<th>Status</th>
+							</tr>
+							<tr>
+								<td>GenericMethod[Int32](2,4)</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            <tr>
+								<td>GenericMethod[Double](9.2d,11.7d)</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            
+						</table>
+					</div>
+				</div>
+                <div class='fixture-container'>
+					<div class='fixture-head'>
+						<span class='fixture-name'>MethodWithParameters</span>
+						<span class='fixture-result passed'><i class='fa fa-check'></i></span>
+					</div>
+					<div class='fixture-content'>
+						<table class='simple-grey'>
+							<tr>
+								<th>TestName</th>
+								<th>Status</th>
+							</tr>
+							<tr>
+								<td>MethodWithParameters(9,11)</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            <tr>
+								<td>MethodWithParameters(2,2)</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            
+						</table>
+					</div>
+				</div>
+                <div class='fixture-container'>
+					<div class='fixture-head'>
+						<span class='fixture-name'>GenericFixture(11.5d)</span>
+						<span class='fixture-result passed'><i class='fa fa-check'></i></span>
+					</div>
+					<div class='fixture-content'>
+						<table class='simple-grey'>
+							<tr>
+								<th>TestName</th>
+								<th>Status</th>
+							</tr>
+							<tr>
+								<td>Test1</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            <tr>
+								<td>Test2</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            
+						</table>
+					</div>
+				</div>
+                <div class='fixture-container'>
+					<div class='fixture-head'>
+						<span class='fixture-name'>GenericFixture(5)</span>
+						<span class='fixture-result passed'><i class='fa fa-check'></i></span>
+					</div>
+					<div class='fixture-content'>
+						<table class='simple-grey'>
+							<tr>
+								<th>TestName</th>
+								<th>Status</th>
+							</tr>
+							<tr>
+								<td>Test1</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            <tr>
+								<td>Test2</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            
+						</table>
+					</div>
+				</div>
+                <div class='fixture-container'>
+					<div class='fixture-head'>
+						<span class='fixture-name'>IgnoredFixture</span>
+						<span class='fixture-result skipped'><i class='fa fa-angle-double-right'></i></span>
+					</div>
+					<div class='fixture-content'>
+						<table class='simple-grey'>
+							<tr>
+								<th>TestName</th>
+								<th>Status</th>
+							</tr>
+							<tr>
+								<td>Test1</td>
+								<td class='skipped'>skipped<pre>OneTimeSetUp: BECAUSE</pre></td>
+							</tr>
+                            <tr>
+								<td>Test2</td>
+								<td class='skipped'>skipped<pre>OneTimeSetUp: BECAUSE</pre></td>
+							</tr>
+                            <tr>
+								<td>Test3</td>
+								<td class='skipped'>skipped<pre>OneTimeSetUp: BECAUSE</pre></td>
+							</tr>
+                            
+						</table>
+					</div>
+				</div>
+                <div class='fixture-container'>
+					<div class='fixture-head'>
+						<span class='fixture-name'>ParameterizedFixture(42)</span>
+						<span class='fixture-result passed'><i class='fa fa-check'></i></span>
+					</div>
+					<div class='fixture-content'>
+						<table class='simple-grey'>
+							<tr>
+								<th>TestName</th>
+								<th>Status</th>
+							</tr>
+							<tr>
+								<td>Test1</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            <tr>
+								<td>Test2</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            
+						</table>
+					</div>
+				</div>
+                <div class='fixture-container'>
+					<div class='fixture-head'>
+						<span class='fixture-name'>ParameterizedFixture(5)</span>
+						<span class='fixture-result passed'><i class='fa fa-check'></i></span>
+					</div>
+					<div class='fixture-content'>
+						<table class='simple-grey'>
+							<tr>
+								<th>TestName</th>
+								<th>Status</th>
+							</tr>
+							<tr>
+								<td>Test1</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            <tr>
+								<td>Test2</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            
+						</table>
+					</div>
+				</div>
+                <div class='fixture-container'>
+					<div class='fixture-head'>
+						<span class='fixture-name'>OneTestCase</span>
+						<span class='fixture-result passed'><i class='fa fa-check'></i></span>
+					</div>
+					<div class='fixture-content'>
+						<table class='simple-grey'>
+							<tr>
+								<th>TestName</th>
+								<th>Status</th>
+							</tr>
+							<tr>
+								<td>TestCase</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            
+						</table>
+					</div>
+				</div>
+                <div class='fixture-container'>
+					<div class='fixture-head'>
+						<span class='fixture-name'>MockTestFixture</span>
+						<span class='fixture-result passed'><i class='fa fa-check'></i></span>
+					</div>
+					<div class='fixture-content'>
+						<table class='simple-grey'>
+							<tr>
+								<th>TestName</th>
+								<th>Status</th>
+							</tr>
+							<tr>
+								<td>MyTest</td>
+								<td class='passed'>passed</td>
+							</tr>
+                            <!--%INSERTTEST%-->
+						</table>
+					</div>
+				</div>
+                <!--%INSERTFIXTURE%-->
 			        </div>
                 </div>
             </div>
@@ -454,43 +754,4 @@
 			chart.draw(data, { chartArea: {left:0, 'width': '80%', 'height': '80%'}, backgroundColor: { fill:'transparent' }, colors: ['green', 'red', 'orange', '#777'], pieHole: 0.4, pieSliceText: 'value', height: 210, width: 300 });
 		}
 	</script>
-</html>";
-            }
-        }
-
-        public static string Fixture
-        {
-            get
-            {
-                return @"<div class='fixture-container'>
-					<div class='fixture-head'>
-						<span class='fixture-name'><!--%FIXTURENAME%--></span>
-						<span class='fixture-result <!--%FIXTURERESULT%-->'><i class='fa <!--%FIXTURERESULTICO%-->'></i></span>
-					</div>
-					<div class='fixture-content'>
-						<table class='simple-grey'>
-							<tr>
-								<th>TestName</th>
-								<th>Status</th>
-							</tr>
-							<!--%INSERTTEST%-->
-						</table>
-					</div>
-				</div>
-                <!--%INSERTFIXTURE%-->";
-            }
-        }
-
-        public static string Test
-        {
-            get
-            {
-                return @"<tr>
-								<td><!--%TESTNAME%--></td>
-								<td class='<!--%TESTSTATUS%-->'><!--%TESTSTATUS%--><!--%TESTSTATUSMSG%--></td>
-							</tr>
-                            <!--%INSERTTEST%-->";
-            }
-        }
-    }
-}
+</html>
