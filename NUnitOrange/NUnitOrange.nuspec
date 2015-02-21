@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>NUnitOrange</id>
+    <version>1.1.1</version>
+    <title>NUnit Orange – NUnit HTML Report Generator</title>
+    <authors>Anshoo Arora</authors>
+    <owners>Anshoo Arora</owners>
+    <licenseUrl>https://github.com/relevantcodes/NUnitOrange</licenseUrl>
+    <projectUrl>http://relevantcodes.com/nunit-orange-nunit-html-report-generator/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NUnitOrange creates masonry style HTML reports for NUnit. Its a simple Console application that creates easy to use, attractive dashboard. It shows the XML output from NUnit in a presentable manner with charts, graphs and tables.</description>
+    <tags>NUnit Report HTML Orange</tags>
+    <copyright>Copyright © Anshoo Arora 2015</copyright>
+  </metadata>
+  <files>
+    <file src="bin\Release\NUnitOrange.exe" target="tools" />
+  </files>
+</package>
